@@ -2,7 +2,7 @@
 
   "name": "PLEXILE ARCADE", 
 
-  "short_name": "PA", 
+  "short_name": "PA 🕹️", 
 
   "start_url": "/", 
 
@@ -13,7 +13,7 @@
 
     "src": "/images/plexilearcade.png", 
 
-    "sizes": "512x512", 
+    "sizes": "402x441", 
 
     "type": "image/png" 
 
