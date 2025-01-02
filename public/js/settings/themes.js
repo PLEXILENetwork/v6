@@ -30,25 +30,25 @@ class Particle {
 
     reset() {
         this.x = Math.random() * canvas.width;
-        this.y = canvas.height - Math.random() * 50; 
+        this.y = canvas.height - Math.random() * 80;
         this.radius = Math.random() * 3 + 1;
-        this.speed = Math.random() * 2 + 1;
-        this.opacity = Math.random() * 0.8 + 0.2; 
-        this.wind = (Math.random() - 0.5) * 1.5; 
+        this.speed = Math.random() * 3 + 3; 
+        this.opacity = Math.random() * 0.9 + 0.1;
+        this.wind = (Math.random() - 0.5) * 2; 
     }
 
     update() {
-        this.y -= this.speed; 
-        this.x += this.wind; 
+        this.y -= this.speed;
+        this.x += this.wind;
 
-        const fadeHeight = canvas.height * 0.7;
+        const fadeHeight = canvas.height * 0.4; 
         if (this.y < fadeHeight) {
-            this.opacity -= 0.01;
+            this.opacity -= 0.04; 
         }
 
         if (this.y < 0 || this.opacity <= 0) {
             this.reset();
-            this.y = canvas.height - Math.random() * 50; 
+            this.y = canvas.height - Math.random() * 80;
         }
     }
 
@@ -61,8 +61,8 @@ class Particle {
     }
 }
 
-for (let i = 0; i < 100; i++) {
-    particles.push(new Particle());
+for (let i = 0; i < 70; i++) {
+    particles.push(new Particle()); 
 }
 
 function animate() {
