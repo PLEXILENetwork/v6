@@ -1,6 +1,6 @@
 <p align="center">
 <kbd>
-   <img src="/public/images/banner3.png" alt="PLEXILE ARCADE" style="border-radius: 50%; width: 600px; height: auto;">
+   <img src="/public/images/banner.png" alt="PLEXILE ARCADE" style="border-radius: 50%; width: 600px; height: auto;">
 </kbd>
 </p>
 <p align="center">The Next Generation Of Unblocked Games...</p>
