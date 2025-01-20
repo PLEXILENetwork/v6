@@ -15,7 +15,7 @@ Deploy PLEXILE ARCADE with your preferred platform:
 > PLEXILE ARCADE's built-in proxy may not work on all hoster's. Vercel or Heroku are recommended!
 
 ```
-git clone https://github.com/PLEXILENetwork/v6
+git clone https://github.com/PLEXILENetwork/v6.git
 ```
 ```sh
 cd v6
