@@ -3,29 +3,16 @@
    <img src="/public/images/banner.png" alt="PLEXILE ARCADE" style="border-radius: 50%; width: 600px; height: auto;">
 </kbd>
 </p>
-<p align="center">
-  <a href="https://github.com/willoo0/v6/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/willoo0/v6" alt="contributors" />
-  </a>
-  <a href="">
-    <img src="https://img.shields.io/github/last-commit/willoo0/v6" alt="commits" />
-  </a>  
-  <a href="https://github.com/willoo0/v6/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/willoo0/awesome-readme-template.svg" alt="license" />
-  </a>
-</p>
+<p align="center">The Next Generation Of Unblocked Games...</p>
 
 ---
-
-## What is PLEXILE ARCADE?
-
-**PLEXILE ARCADE** is an Unblocked Website dedicated to Unblocking the School Systems!
-
-![PLEXILE ARCADE Demo](/public/images/PLEXILEARCADE.gif)
 
 ## Setup
 
 Deploy PLEXILE ARCADE with your preferred platform:
+
+> [!IMPORTANT]  
+> PLEXILE ARCADE's built-in proxy may not work on all hoster's. Vercel or Heroku are recommended!
 
 ```
 git clone https://github.com/PLEXILENetwork/v6
