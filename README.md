@@ -1,5 +1,7 @@
 <p align="center">
-   <img src="/public/images/plexilearcadebanner.png" alt="PLEXILE ARCADE" style="border-radius: 50%; width: 860px;height: auto;">
+<kbd>
+   <img src="/public/images/plexilearcadebanner.png" alt="PLEXILE ARCADE" style="border-radius: 50%; width: 400px;height: auto;">
+</kbd>
 </p>
 <p align="center">
   <a href="https://github.com/willoo0/v6/graphs/contributors">
@@ -43,3 +45,4 @@ node index.mjs
 ## License
 
 PLEXILE ARCADE is protected by copyright using the [Apache License 2.0](./LICENSE)
+
