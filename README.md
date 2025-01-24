@@ -21,7 +21,10 @@ git clone https://github.com/PLEXILENetwork/v6.git
 cd v6
 ```
 ```
-npm i
+npm install
+```
+```
+npm install @tomphttp/bare-server-node
 ```
 ```
 node index.mjs
