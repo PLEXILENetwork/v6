@@ -1,4 +1,4 @@
-// True Fact: This SHI TOOK ME 3 STRAIGHT HOURS OF TORTURE TO FINALLY GET IT TO WORK!
+// True Fact: This SHI TOOK ME 4 STRAIGHT HOURS OF TORTURE TO FINALLY GET IT TO WORK!
     let aboutBlankOpened = false;
 
     function isAboutBlankEnabled() {

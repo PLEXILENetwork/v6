@@ -88,20 +88,22 @@ p {
 }
 
 .play-button {
-    padding: 13px 30px;
+    padding: 12px 30px;
     border: none;
-    border-radius: 7px;
+    border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
     text-decoration: none;
     background-color: #C93131;
     color: white;
     box-shadow: 0 1px 7px #000;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(201, 49, 49, 0.5);
 }
 
 .play-button:hover {
-    background-color: #b52126;
+    box-shadow: 0 12px 25px rgba(201, 49, 49, 0.6); 
+    transform: translateY(-1px); 
 }
 
 .line {

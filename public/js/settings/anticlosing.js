@@ -16,9 +16,9 @@ document.getElementById('toggleLeavePopup').addEventListener('change', function 
     localStorage.setItem('leavePopupEnabled', JSON.stringify(isLeavePopupEnabled));
 
     if (isLeavePopupEnabled) {
-        alert('Anti-Closing Enabled..');
+        alert('Anti-Closing Enabled.');
     } else {
-        alert('Anti-Closing Disabled..');
+        alert('Anti-Closing Disabled.');
     }
 });
 

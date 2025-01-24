@@ -78,7 +78,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="rect5"></div>
     </div>
 
-    <div id="notification" class="notification">Settings Applied!</div>
+    <div id="notification" class="notification"><i class='bx bx-check-circle'></i>Settings Applied!</div>
     
     <div class="sidebar">
         <a href="/" class="sidebar-icon home-icon"><i class="bx bx-home-alt icon"></i></a>
@@ -92,51 +92,52 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <br>
     <div class="main-content">
         <div class="box-container">
-        <div class="box">
+        <div class="box"><br>
 <center><h2>About:Blank</h2></center>
 <br><br>
 <center><p>Hides your history & Makes the Link Less-Blockable <br>(ctrl+a+b to Turn On & Off Auto About:Blank)</p></center>
 
-                <script>
-              var url = "/settings.html";
-              var win;
+<script>
+    var url = "/settings.html";
+    var win;
 
-              function openWindow() {
-                  if (win) {
-                      win.focus();
-                  } else {
-                      win = window.open('', '_blank');
-                      win.document.body.style.margin = '0';
-                      win.document.body.style.height = '100vh';
-                      var iframe = win.document.createElement('iframe');
-                      iframe.style.border = 'none';
-                      iframe.style.width = '100%';
-                      iframe.style.height = '100%';
-                      iframe.src = url;
-                      win.document.body.appendChild(iframe);
-                  }
-              }
+    function openWindow() {
+        if (win) {
+            win.focus();
+        } else {
+            win = window.open('', '_blank');
+            win.document.body.style.margin = '0';
+            win.document.body.style.height = '100vh';
+            var iframe = win.document.createElement('iframe');
+            iframe.style.border = 'none';
+            iframe.style.width = '100%';
+            iframe.style.height = '100%';
+            iframe.src = url;
+            win.document.body.appendChild(iframe);
+        }
+    }
 
-              document.addEventListener('DOMContentLoaded', function() {
-                  var switchInput = document.querySelector('.switch input[type="checkbox"]');
+    document.addEventListener('DOMContentLoaded', function() {
+        var switchInput = document.querySelector('.switch input[type="checkbox"]');
 
-                  switchInput.addEventListener('change', function() {
-                      if (this.checked) {
-                          openWindow();
-                      }
-                  });
-              });
-          </script>
-          
-        <center>
-    <label class="switch">
-        <input type="checkbox">
-        <span class="slider round"></span>
-    </label>
+        switchInput.addEventListener('change', function() {
+            if (this.checked) {
+                openWindow();
+            }
+        });
+    });
+</script>
+
+<center>
+<label class="switch">
+<input type="checkbox">
+<span class="slider round"></span>
+</label>
 </center>
-          
-       </div>
-        <div class="box">
+
+    </div>
+
+        <div class="box"><br>
           <center><h2>Tab Cloak</h2></center>
             <br><br>
           <center><p>Disguises your tab to look just like a educational site.</p></center>
@@ -160,10 +161,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
         </div>
           
-        <div class="box">
+        <div class="box"><br>
           <center><h2>Anti-Closing</h2></center>
             <br><br>
-          <center><p>Prevents extensions from closing your tab with the "Leave <br>Site?" popup.</p></center>
+          <center><p>Prevents extensions from closing your tab with the <br>"Leave Site?" popup.</p></center>
 
           <label class="switch">
               <input type="checkbox" id="toggleLeavePopup">
@@ -171,10 +172,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </label>
         </div>
 
-        <div class="box2">
+        <div class="box2"><br>
           <center><h2>Panic Key</span></h2></center>
             <br><br>
-          <center><p>Redirects you to a educational website whenever a certain <br>key is pressed.</p></center>
+          <center><p>Redirects you to a educational website whenever a <br>certain key is pressed.</p></center>
 
         <center>
          <div class="buttoncontainer">
@@ -199,20 +200,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
      
 
-        <div class="box">
+        <div class="box"><br>
           <center><h2>Clickoff Cloaking</h2></center>
             <br><br>
-          <center><p>Cloaks the Tab whenever the Tab is clicked off of.</p></center>
+          <center><p>Quickly Cloaks the PLEXILE ARCADE whenever the <br>Tab is clicked off of.</p></center>
           <label class="switch">
               <input type="checkbox" id="toggleTitleAndFavicon">
               <span class="slider round"></span>
           </label>
         </div>
 
-     <div class="box">
+     <div class="box"><br>
           <center><h2>Ads (Adsterra)</h2></center>
             <br><br>
-          <center><p>Enable or Disable Adsterra Ads with a simple Click.</p></center>
+          <center><p>Quickly Enable or Disable Adsterra Ads on PLEXILE ARCADE with a simple Click.</p></center>
            <label class="switch">
           <input type="checkbox" id="toggleAds">
           <span class="slider round"></span>

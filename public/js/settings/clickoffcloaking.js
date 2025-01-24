@@ -10,9 +10,9 @@ document.getElementById('toggleTitleAndFavicon').addEventListener('change', func
     localStorage.setItem('titleAndFaviconEnabled', JSON.stringify(isTitleAndFaviconEnabled));
 
     if (isTitleAndFaviconEnabled) {
-        alert('Title & Favicon should now change when the tab is switched..');
+        alert('Clickoff Cloaking enabled.');
     } else {
-        alert('Clickoff Cloaking disabled..');
+        alert('Clickoff Cloaking disabled.');
         resetTitleAndFavicon();
     }
 });
