@@ -96,6 +96,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="search-container">
         <input type="text" placeholder="Search For Games..." class="search-bar" id="searchInput">
+        <button class="random-button" id="random">
+          <i class='bx bx-shuffle'></i>
+      </button>
     </div>
   
     <div class="main-content">
@@ -967,6 +970,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 /*]]>/* */
 </script>
         
+   <script>
+  const boxes = document.querySelectorAll('.box');
+  
+  boxes.forEach((box, index) => {
+    
+    box.style.setProperty('--i', index + 1);
+  });
+
+  document.getElementById('random').addEventListener('click', function () {
+    
+    const links = document.querySelectorAll('#boxContainer .box');
+    
+    if (links.length === 0) return;
+
+    const randomIndex = Math.floor(Math.random() * links.length);
+    const randomLink = links[randomIndex].href;
+
+    window.location.href = randomLink;
+});
+   </script>
     <script src="/js/settings/anticlosing.js"></script>
     <script src="/js/settings/clickoffcloaking.js"></script>
     <script src="/js/settings/tabcloak.js" defer></script>
