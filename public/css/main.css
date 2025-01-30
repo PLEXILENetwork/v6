@@ -134,41 +134,44 @@ p {
 }
 
 .iframebox2 {
-  position: absolute; 
-  bottom: 5px; 
-  left: 50%;
-  transform: translateX(-50%); 
-  border-radius: 7px;
-  padding: 13px;
-  width: 130px;
-  display: flex;
-  flex-direction: column;
-}
-
-.icon-container {
+    position: absolute; 
+    bottom:20px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    box-shadow: 0px 0px 7px #000;
+    border-radius: 7px;
+    padding: 13px;
+    background-color: #C93131;
+    width: 129px;
     display: flex;
-    gap: 8px; 
+    flex-direction: column;
   }
   
-  .icon-container i {
-    background: #C93131; 
-    border: 1px solid #353535; 
-    font-size: 21px;
-    padding: 12px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(5px); 
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-  }
+              .icon-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 105px;
+        }
   
-  .icon-container i:hover {
-    background: #b22d2d;
-  }
-
-  .icon-container i.fullscreen-icon {
-    padding: 12px 13px;
-}
+        .icon-container i {
+            font-size: 24px;
+            margin-right: 28px;
+            cursor: pointer;
+            transition: transform 0.5s ease;
+        }
+  
+        .icon-container i.reload-icon:hover {
+            transform: rotate(360deg);
+        }
+  
+        .icon-container i.fullscreen-icon:hover {
+            transform: rotate(-10deg) scaleX(1.1);
+        }
+  
+        .icon-container i.arrow-icon:hover {
+            transform: scale(1.1);
+        }
 
 b {
     font-size: 14px;

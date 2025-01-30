@@ -44,7 +44,6 @@ fill: white;
 
 .search-bar:hover {
   background-color: #1a1a1a;
-  width: 480px;
 }
   .container {
     display: flex;
@@ -55,7 +54,7 @@ fill: white;
 
   .random-button {
     border: 1px solid #2b2828;
-    border-radius: 9px;
+    border-radius: 8px;
     width: 49px;
     height: 51px;
     box-shadow: 0 1px 6px #000;
