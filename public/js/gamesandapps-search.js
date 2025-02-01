@@ -12,7 +12,6 @@ window.onload = function() {
         notification.style.right = '-320px';
     });
 
-// (THIS A SECRET TEXT, SCREENSHOT NOWWWWW!!!)
   document.getElementById('searchInput').addEventListener('keyup', function() {
         let filter = this.value.toLowerCase();
         let boxes = document.getElementById('boxContainer').getElementsByClassName('box');

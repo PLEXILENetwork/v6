@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
     const texts = [
      "Bringing your adventure alive.",
-     "Join The Discord, dsc.gg/plexilenetwork",
-     "Created & Managed by willooo0",
+     "dsc.gg/plexilenetwork",
+     "Created & Managed by willo",
      "Preparing a smooth journey!",
      "Hang tight, almost ready!",
      "Crafting something special!",
