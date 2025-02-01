@@ -2,12 +2,12 @@
   "name": "v6",
   "version": "1.0.0",
   "description": "The Generation Of Unblocked Games..",
-  "main": "index.js",
+  "main": "index.mjs",
   "scripts": {
-    "start": "node index.js",
-    "setup": "rm -rf node_modules && npm install",
-    "plexilearcadesetup": "npm i"
-  },
+  "start": "node index.mjs",
+  "setup": "npm install && npm install @tomphttp/bare-server-node",
+  "plexilearcadesetup": "npm i"
+},
   "dependencies": {
     "@titaniumnetwork-dev/ultraviolet": "^1.0.11",
     "@tomphttp/bare-server-node": "^2.0.5",
