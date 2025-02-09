@@ -1,14 +1,22 @@
 import http from "node:http";
 import { createBareServer } from "@tomphttp/bare-server-node";
-import express from "express"
+import express from "express";
 import sqlite3 from "sqlite3";
 const app = express();
 const __dirname = process.cwd();
 
+const swAllowedHostnames = ["localhost", "127.0.0.1", "plexilearcade.xyz"];  
+
+const checkAllowedHost = (req, res, next) => {
+  const requestedHost = req.get("Host");  
+  if (swAllowedHostnames.includes(requestedHost)) {
+    return next();  
+  }
+  res.status(403).send("Access Denied: Invalid Host");
+};
+
 app.use(express.json());
-
 app.use(express.urlencoded({ extended: false }));
-
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
@@ -60,9 +68,11 @@ const bareServer = createBareServer("/bare/");
 
 httpServer.on("request", (req, res) => {
   if (bareServer.shouldRoute(req)) {
-    bareServer.routeRequest(req, res);
+    checkAllowedHost(req, res, () => {
+      bareServer.routeRequest(req, res);
+    });
   } else {
-    app(req, res);
+    app(req, res);  
   }
 });
 
@@ -73,6 +83,7 @@ httpServer.on("upgrade", (req, socket, head) => {
     socket.end();
   }
 });
+
 const port = 2100;
 
 httpServer.on("listening", () => {
