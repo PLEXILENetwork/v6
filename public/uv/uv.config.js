@@ -1,6 +1,6 @@
 self.__uv$config = {
     prefix: '/static/pa/',
-    bare: '/m/',
+    bare: '/bare/',
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
     handler: '/uv/uv.handler.js',
