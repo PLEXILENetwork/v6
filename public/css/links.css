@@ -21,7 +21,7 @@ font-weight: bold;
 .links-button {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   gap: 10px;
 }
 
@@ -35,8 +35,50 @@ font-weight: bold;
   color: white;
   cursor: pointer;
   border-radius: 8px;
-  width: 300px; 
-  text-align: left; 
+  width: 300px;
+  text-align: left;
+  opacity: 0; 
+  transform: translateY(20px); 
+  animation: fadeInUp 0.5s forwards; 
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px); 
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0); 
+    opacity: 1; 
+  }
+}
+
+.links-button button:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.links-button button:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.links-button button:nth-child(3) {
+  animation-delay: 1.7s;
+}
+
+.links-button button:nth-child(4) {
+  animation-delay: 2.4s;
+}
+
+.links-button button:nth-child(5) {
+  animation-delay: 3.1s;
+}
+
+.links-button button:nth-child(6) {
+  animation-delay: 3.8s;
+}
+
+.links-button button:nth-child(7) {
+  animation-delay: 4.5s;
 }
 
 .links-button button:hover {
