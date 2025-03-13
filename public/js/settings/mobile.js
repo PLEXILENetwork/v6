@@ -14,10 +14,10 @@ document.getElementById('toggleAds').addEventListener('change', function () {
 
     if (areAdsDisabled) {
         disableAds();
-        alert('Ads Disabled');
+        alert('Ads Disabled 😔');
     } else {
         enableAds();
-        alert('Ads Enabled');
+        alert('Ads Enabled 😃');
     }
 });
 
