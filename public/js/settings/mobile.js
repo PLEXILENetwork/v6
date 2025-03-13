@@ -1,23 +1,23 @@
-let areAdsDisabled = JSON.parse(localStorage.getItem('adsDisabled'));
+let areAdsDisabled = JSON.parse(localStorage.getItem('adsDisabled')) ?? false;
 
-if (areAdsDisabled === null) {
-  areAdsDisabled = false;
-}
-
-if (!areAdsDisabled) {
-  enableAds();
-}
+document.addEventListener('DOMContentLoaded', () => {
+  if (areAdsDisabled) {
+    disableAds();
+  } else {
+    enableAds();
+  }
+});
 
 document.getElementById('ads-button').addEventListener('click', function () {
   areAdsDisabled = !areAdsDisabled; 
-  localStorage.setItem('adsDisabled', JSON.stringify(areAdsDisabled));  
+  localStorage.setItem('adsDisabled', JSON.stringify(areAdsDisabled));
 
   if (areAdsDisabled) {
-      disableAds();
-      alert('Ads Disabled.. 😔');
+    disableAds();
+    alert('Ads Disabled.. 😔');
   } else {
-      enableAds();
-      alert('Ads Enabled..');
+    enableAds();
+    alert('Ads Enabled..');
   }
 });
 
@@ -47,4 +47,3 @@ function disableAds() {
     }
   });
 }
-
