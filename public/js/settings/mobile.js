@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-document.getElementById('ads-button').addEventListener('click', function () {
+document.getElementById('toggleAds').addEventListener('click', function () {
   areAdsDisabled = !areAdsDisabled; 
   localStorage.setItem('adsDisabled', JSON.stringify(areAdsDisabled));
 
