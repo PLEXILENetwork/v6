@@ -1,39 +1,50 @@
 let areAdsDisabled = JSON.parse(localStorage.getItem('adsDisabled'));
 
 if (areAdsDisabled === null) {
-    areAdsDisabled = false;
+  areAdsDisabled = false;
 }
 
 if (!areAdsDisabled) {
-    enableAds();
+  enableAds();
 }
 
-document.getElementById('toggleAds').addEventListener('change', function () {
-    areAdsDisabled = !areAdsDisabled;
-    localStorage.setItem('adsDisabled', JSON.stringify(areAdsDisabled));
+document.getElementById('ads-button').addEventListener('click', function () {
+  areAdsDisabled = !areAdsDisabled; 
+  localStorage.setItem('adsDisabled', JSON.stringify(areAdsDisabled));  
 
-    if (areAdsDisabled) {
-        disableAds();
-        alert('Ads Disabled. 😔');
-    } else {
-        enableAds();
-        alert('Ads Enabled.');
-    }
+  if (areAdsDisabled) {
+      disableAds();
+      alert('Ads Disabled.. 😔');
+  } else {
+      enableAds();
+      alert('Ads Enabled..');
+  }
 });
 
-document.getElementById('toggleAds').checked = !areAdsDisabled;
-
 function enableAds() {
-    const adScriptElement = document.createElement('script');
-    adScriptElement.type = 'text/javascript';
-    adScriptElement.src = '//crockerydestructivespoken.com/88/0e/1a/880e1a89f0863fdfa6aa44da31d955a3.js';
-    adScriptElement.async = true;
-    document.body.appendChild(adScriptElement);
+  const adScripts = [
+    { id: 'adScript1', src: '//crockerydestructivespoken.com/02/22/9e/02229e37b98d66a6657744bf7b07c279.js' },
+    { id: 'adScript2', src: '//crockerydestructivespoken.com/f3/70/9b/f3709b7dd09eb147485a2b038066c5a3.js' }
+  ];
+
+  adScripts.forEach(({ id, src }) => {
+    if (!document.getElementById(id)) {
+      const adScriptElement = document.createElement('script');
+      adScriptElement.type = 'text/javascript';
+      adScriptElement.src = src;
+      adScriptElement.async = true;
+      adScriptElement.id = id;
+      document.body.appendChild(adScriptElement);
+    }
+  });
 }
 
 function disableAds() {
-    const adScriptElement = document.querySelector('script[src="//crockerydestructivespoken.com/88/0e/1a/880e1a89f0863fdfa6aa44da31d955a3.js"]');
+  ['adScript1', 'adScript2'].forEach(id => {
+    const adScriptElement = document.getElementById(id);
     if (adScriptElement) {
-        adScriptElement.remove();
+      adScriptElement.remove();
     }
+  });
 }
+
