@@ -1,6 +1,6 @@
 let areAdsDisabled = JSON.parse(localStorage.getItem('adsDisabled'));
 if (areAdsDisabled === null) {
-  areAdsDisabled = true; 
+  areAdsDisabled = false; 
   localStorage.setItem('adsDisabled', JSON.stringify(areAdsDisabled));
 }
 
