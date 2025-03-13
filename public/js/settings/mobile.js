@@ -1,6 +1,8 @@
 let areAdsDisabled = JSON.parse(localStorage.getItem('adsDisabled')) ?? false;
+const toggleAdsCheckbox = document.getElementById('toggleAds');
 
 document.addEventListener('DOMContentLoaded', () => {
+  toggleAdsCheckbox.checked = areAdsDisabled; 
   if (areAdsDisabled) {
     disableAds();
   } else {
@@ -8,8 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-document.getElementById('toggleAds').addEventListener('click', function () {
-  areAdsDisabled = !areAdsDisabled; 
+toggleAdsCheckbox.addEventListener('change', function () {
+  areAdsDisabled = this.checked; 
   localStorage.setItem('adsDisabled', JSON.stringify(areAdsDisabled));
 
   if (areAdsDisabled) {
