@@ -26,7 +26,7 @@ font-weight: bold;
 }
 
 .links-button button {
-  padding: 11px 20px;
+  padding: 11px 18px;
   font-size: 16px;
   border: none;
   background-color: #111111;
@@ -35,7 +35,7 @@ font-weight: bold;
   color: white;
   cursor: pointer;
   border-radius: 8px;
-  width: 300px;
+  width: 310px;
   text-align: left;
   opacity: 0; 
   transform: translateY(20px); 
@@ -83,4 +83,26 @@ font-weight: bold;
 
 .links-button button:hover {
   background-color: #1A1A1A;
+}
+
+.status-up {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #17b30e;
+  border-radius: 50%;
+  right: 15px; 
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.status-down {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #df1414;
+  border-radius: 50%;
+  right: 15px; 
+  top: 50%;
+  transform: translateY(-50%);
 }
